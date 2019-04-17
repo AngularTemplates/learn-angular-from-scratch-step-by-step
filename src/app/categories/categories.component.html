@@ -1,0 +1,19 @@
+<div class="col-lg-12 categories">
+  <div class="card col-md-offset-2 col-md-8 ">
+    <h3 class="list-title">Learn all about Angular</h3>
+    <mat-list class="list">
+      <mat-list-item class="list-item" *ngFor="let category of categories">
+        <img matListAvatar class="avatar" [src]="category.image">
+        <h3 matLine class="list-line">
+          <a [routerLink]="['/questions/about', category.slug]">{{category.title}}</a>
+        </h3>
+        <h3 matLine class="list-line">{{category.description}}</h3>
+        <div matLine class="list-line">
+          <mat-chip-list>
+            <mat-chip *ngFor="let tag of category.tags">{{tag.name}}</mat-chip>
+          </mat-chip-list>
+        </div>
+      </mat-list-item>
+    </mat-list>
+</div>
+</div>

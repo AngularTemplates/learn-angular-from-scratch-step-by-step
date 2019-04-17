@@ -1,0 +1,20 @@
+breadcrumb {
+  .breadcrumb {
+    background: transparent;
+    border-radius: 0;
+    margin: 20px 0;
+    padding: 0;
+
+    .breadcrumb-item {
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1.9px;
+
+      a {
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+}

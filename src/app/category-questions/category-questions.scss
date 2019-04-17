@@ -1,0 +1,29 @@
+@import '../styles/_variables';
+
+.category-questions {
+  .list {
+    margin-top: 30px;
+  }
+  .list-item {
+    margin-bottom: 10px;
+    &:not(:first-child) {
+      border-top: 1px solid $grey4;
+    }
+
+    .icons-line {
+      margin-top: 10px;
+      .list-single-icon {
+        color: $grey5;
+        font-size: 20px;
+      }
+      .list-single-icon-number {
+        color: $grey5;
+        vertical-align: top;
+
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

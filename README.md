@@ -1,27 +1,34 @@
-# LearnAngularFromScratch
+# Angular Tutorial: Learn Angular from scratch step by step
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project is part of Learn Angular from scratch step by step tutorial where we explore from the basic concepts and why’s of Angular Framework to building a complete Angular 7 app using Angular Material components.
 
-## Development server
+In this Angular Tutorial we explain one by one the main building blocks of an Angular application as well as the best practices for building a complete mobile app with Angular. Also this tutorial shows how to setup your dev environment so you can start developing Angular apps in your computer right now.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Get the step by step free tutorial in https://angular-templates.io/tutorials/about/learn-angular-from-scratch-step-by-step
 
-## Code scaffolding
+**Please support this project by simply putting a Github star ⭐. Share this library with friends on Twitter and everywhere else you can. 🙏. Thanks**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm install` to install all the required dependencies
 
-## Running unit tests
+Then run `ng serve` to start a dev server.
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+![](https://s3-us-west-2.amazonaws.com/angular-templates/tutorials/learn-angular-from-scratch-step-by-step/learn-angular-from-scratch-step-by-step-categories.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Premium Angular Starter Apps
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you want to build a complex and robust Angular app you should check [Angular Admin Template](https://angular-templates.com/product/angular-admin-template) which is a super complete application to build your next angular project.
+
+Created with performance and ease of development in mind, this Angular 7 web template is something you will love. It includes all the components that you might need inside a project and a detailed documentation on how to get started.
+
+
+![](https://s3-us-west-2.amazonaws.com/angular-templates/angular-duo-template/angular-admin-template-new-cover.jpeg)
+
+## Free Angular examples
+
+Find more Angular tutorials and starter apps in https://angular-templates.com

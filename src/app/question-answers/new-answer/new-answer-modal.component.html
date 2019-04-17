@@ -1,0 +1,13 @@
+<div class="alert-modal">
+  <h3 class="alert-modal-title">NEW ANSWER</h3>
+  <!-- <span class="alert-modal-text">Write your answer here:</span> -->
+  <div>
+    <form [formGroup]="answerForm" class="form" (ngSubmit)="onSubmit(answerForm.value)">
+      <textarea rows=3 class="form-control form-input" type="text" formControlName="answer"></textarea>
+      <div class="alert-modal-buttons">
+        <button mat-raised-button color="primary" class="alert-modal-button alert-modal-button-success" type="submit" [disabled]="!answerForm.valid">Answer</button>
+        <button mat-raised-button class="alert-modal-button alert-modal-button-failure" type="button"(click)="onCloseCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

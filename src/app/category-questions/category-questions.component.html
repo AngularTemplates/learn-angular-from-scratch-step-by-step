@@ -1,0 +1,21 @@
+<div class="col-lg-12 category-questions">
+  <div class="card col-md-offset-2 col-md-8 ">
+    <h3 class="list-title">Learn about: {{categoryTitle}}</h3>
+    <button mat-raised-button color="primary" (click)="openNewQuestionModal(categorySlug)">New Question</button>
+    <mat-list class="list">
+      <mat-list-item class="list-item" *ngFor="let question of questions">
+        <h3 matLine>
+          <a [routerLink]="['/question/', question.questionSlug]">{{question.question}}</a>
+        </h3>
+        <p matLine class="icons-line">
+          <i class="list-single-icon fa fa-thumbs-o-up" (click)="addPositiveVote(question)" aria-hidden="true"></i>
+          <span class="list-single-icon-number">{{question.positiveVotes}}</span>
+          <i class="list-single-icon fa fa-thumbs-o-down" (click)="addNegativeVote(question)"></i>
+          <span class="list-single-icon-number">{{question.negativeVotes}}</span>
+          <i class="list-single-icon fa fa fa-trash-o" (click)="delete(question.id)"></i>
+          <span class="list-single-icon-number"></span>
+          <span class="list-single-icon-number">{{question.answers? question.answers.length: 0}} Answers</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+</div>

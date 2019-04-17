@@ -1,0 +1,59 @@
+ [
+    {
+      "slug": "angular",
+      "title": "Angular",
+      "image": "https://angular.io/assets/images/logos/angular/angular.svg",
+      "description": "Angular is a platform that makes it easy to build applications with the web.",
+      "tags": [
+        {
+          "name": "Angular JS"
+        },
+        {
+          "name": "Angular 2"
+        },
+        {
+          "name": "Angular 4"
+        },
+        {
+          "name": "Angular 5"
+        },
+        {
+          "name": "Angular 6"
+        },
+        {
+          "name": "Angular 7"
+        }
+      ]
+    },
+    {
+      "slug": "angular-cli",
+      "title": "Angular Cli",
+      "image": "https://angular.io/generated/images/marketing/concept-icons/cli.svg",
+      "description": "Angular cli is a command line interface to scaffold and build angular apps using nodejs style modules.",
+      "tags":[
+        {
+          "name": "Angular CLI"
+        },
+        {
+          "name": "Testing"
+        }
+      ]
+    },
+    {
+      "slug": "typescript",
+      "title": "Typescript",
+      "image": "https://s.gravatar.com/avatar/3e2b342616822f8eabc9dd393840db4a?size=496&default=retro",
+      "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.",
+      "tags": [
+        {
+            "name": "Javascript"
+        },
+        {
+            "name": "Webpack"
+        },
+        {
+            "name": "Typescript 2.x"
+        }
+      ]
+    }
+  ]

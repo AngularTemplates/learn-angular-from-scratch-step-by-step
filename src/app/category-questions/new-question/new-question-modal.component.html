@@ -1,0 +1,12 @@
+<div class="alert-modal">
+  <h3 class="alert-modal-title">NEW QUESTION</h3>
+  <div>
+    <form [formGroup]="questionForm" class="form" (ngSubmit)="onSubmit(questionForm.value)">
+      <textarea rows=3 class="form-control form-input" type="text" formControlName="question"></textarea>
+      <div class="alert-modal-buttons">
+        <button mat-raised-button color="primary" class="alert-modal-button alert-modal-button-success" type="submit" [disabled]="!questionForm.valid">Ask</button>
+        <button mat-raised-button class="alert-modal-button alert-modal-button-failure" type="button"(click)="onCloseCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

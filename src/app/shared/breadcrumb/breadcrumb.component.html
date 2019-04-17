@@ -1,0 +1,6 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs; let last = last;">
+    <a *ngIf="!last; else lastItem" [routerLink]="[breadcrumb.url]">{{ breadcrumb.label }}</a>
+    <ng-template #lastItem>{{ breadcrumb.label }}</ng-template>
+  </li>
+</ol>

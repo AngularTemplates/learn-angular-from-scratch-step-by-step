@@ -1,0 +1,40 @@
+@import './_variables';
+
+.alert-modal {
+  min-width: 300px;
+
+  .alert-modal-title {
+    color: $grey8;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .alert-modal-text {
+    color: $grey8;
+    display: block;
+    text-align: center;
+  }
+
+  .alert-modal-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    .alert-modal-button {
+
+      margin-bottom: 10px;
+      margin-top: 40px;
+      min-width: 60px;
+      font-weight: 400;
+      width: 60%;
+
+      &.alert-modal-button-success {
+        margin-right: 10px;
+      }
+
+      &.alert-modal-button-failure {
+
+      }
+    }
+  }
+}
