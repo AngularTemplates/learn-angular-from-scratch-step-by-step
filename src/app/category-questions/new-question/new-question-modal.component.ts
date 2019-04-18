@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Inject} from '@angular/core';
+import { Component, OnInit, Inject} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Validators, FormGroup, FormControl} from '@angular/forms';
 import { QuestionsService } from '../../services/questions.service';
@@ -17,8 +17,6 @@ export class NewQuestionModalComponent implements OnInit{
   questionForm: FormGroup;
 
   constructor(
-    private router: Router,
-    private route: ActivatedRoute,
     public questionsService: QuestionsService,
     private slugifyPipe: SlugifyPipe,
     public thisDialogRef: MatDialogRef<NewQuestionModalComponent>,

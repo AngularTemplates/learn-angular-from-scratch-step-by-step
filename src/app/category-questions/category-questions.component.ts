@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { QuestionsService } from '../services/questions.service';
 import { AnswersService } from '../services/answers.service';
 import { Question } from '../../../sdk/models/Question';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { DeleteQuestionModalComponent } from './delete-question/delete-question-modal.component';
 import { NewQuestionModalComponent } from './new-question/new-question-modal.component';
 
@@ -20,7 +20,6 @@ export class CategoryQuestionsComponent implements OnInit{
   categorySlug: any;
 
   constructor(
-    private router: Router,
     private route: ActivatedRoute,
     public questionsService: QuestionsService,
     public answersService: AnswersService,

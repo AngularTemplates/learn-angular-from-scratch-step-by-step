@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AnswersService } from '../services/answers.service'
 import { Question } from '../../../sdk/models/Question';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { DeleteAnswerModalComponent } from './delete-answer/delete-answer-modal.component';
 import { NewAnswerModalComponent } from './new-answer/new-answer-modal.component';
 import { UpdateAnswerModalComponent } from './update-answer/update-answer-modal.component';
@@ -19,7 +19,6 @@ export class QuestionAnswersComponent {
 
   constructor(
     private answersService: AnswersService,
-    private router: Router,
     private route: ActivatedRoute,
     public dialog: MatDialog
   ){}

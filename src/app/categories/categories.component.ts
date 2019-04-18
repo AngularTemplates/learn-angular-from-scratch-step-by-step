@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { CategoryModel } from "./category.model";
 
 @Component({
@@ -12,10 +12,7 @@ export class CategoriesComponent implements OnInit{
 
   categories: CategoryModel[];
 
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute
-  ){}
+  constructor(private route: ActivatedRoute){}
 
   ngOnInit(): void {
     this.route.data.subscribe(routeData => {

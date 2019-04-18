@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/learn-angular-from-scratch",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

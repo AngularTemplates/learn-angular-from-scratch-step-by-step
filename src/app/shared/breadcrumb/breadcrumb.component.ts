@@ -4,10 +4,7 @@
 import {switchMap, map, filter} from 'rxjs/operators';
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd, Params, PRIMARY_OUTLET } from "@angular/router";
-import { Observable } from "rxjs";
-
-
-
+ 
 
 interface IBreadcrumb {
   label: string;

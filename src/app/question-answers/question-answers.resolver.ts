@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot } from "@angular/router";
 import { QuestionsService } from '../services/questions.service';
 
-
 @Injectable()
 export class QuestionAnswersResolver implements Resolve<any> {
 

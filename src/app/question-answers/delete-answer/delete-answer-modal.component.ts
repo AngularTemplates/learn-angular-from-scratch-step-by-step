@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 import { AnswersService } from '../../services/answers.service';
 
@@ -8,6 +8,7 @@ import { AnswersService } from '../../services/answers.service';
   styleUrls: ['../../styles/modals.scss']
 })
 export class DeleteAnswerModalComponent {
+
   constructor(
     public thisDialogRef: MatDialogRef<DeleteAnswerModalComponent>,
     @Inject(MAT_DIALOG_DATA) public modalData: any,

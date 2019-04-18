@@ -1,5 +1,4 @@
-
-import {forkJoin as observableForkJoin,  Observable } from 'rxjs';
+import { forkJoin as observableForkJoin } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot } from "@angular/router";
 import { QuestionsService } from '../services/questions.service';

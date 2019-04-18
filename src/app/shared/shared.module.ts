@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SDKBrowserModule } from '../../../sdk/index';
-import { SlugifyPipe } from './slugify.pipe';
+import { SlugifyPipe } from '../shared/slugify.pipe';
 // Material modules
 import {
   MatDialogModule,
@@ -21,7 +21,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    SlugifyPipe
   ],
   imports: [
     CommonModule,

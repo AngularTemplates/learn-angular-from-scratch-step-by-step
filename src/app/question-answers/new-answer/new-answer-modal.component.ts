@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { Validators, FormGroup, FormControl} from '@angular/forms';
 import { AnswersService } from '../../services/answers.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
@@ -16,8 +15,6 @@ export class NewAnswerModalComponent implements OnInit{
   answerForm: FormGroup;
 
   constructor(
-    private router: Router,
-    private route: ActivatedRoute,
     public answersService: AnswersService,
     public thisDialogRef: MatDialogRef<NewAnswerModalComponent>,
     @Inject(MAT_DIALOG_DATA) public modalData: any,
