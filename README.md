@@ -19,6 +19,10 @@ Navigate to `http://localhost:4200/`. The app will automatically reload if you c
 
 ![](https://s3-us-west-2.amazonaws.com/angular-templates/tutorials/learn-angular-from-scratch-step-by-step/learn-angular-from-scratch-step-by-step-categories.png)
 
+## Demo
+
+https://learn-angular-from-scratch.firebaseapp.com
+
 
 ## Premium Angular Starter Apps
 
