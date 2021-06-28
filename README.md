@@ -35,4 +35,4 @@ Created with performance and ease of development in mind, this Angular 7 web tem
 
 ## Free Angular examples
 
-Find more Angular tutorials and starter apps in https://angular-templates.com
+Find more Angular tutorials and starter apps in https://angular-templates.io
