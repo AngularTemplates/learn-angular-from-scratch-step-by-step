@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  # REST API running on Node JS container
+  app:
+    container_name: lafs-api
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+    # link this container to the Mongo DB container
+    links:
+      - mongo
+      # pass in environment variables for database host and name
+      environment:
+        - DB_HOST=mongo
+        - DB_NAME=lafs-db
+    # Mongo DB storage container
+    mongo:
+      container_name: lafs-db
+      image: 'mongo:4'
+      ports:
+        - '27017:27017'
+    # Attach the external network to these containers
+    networks:
+      default:
+        external:
+          name: lafs-net
