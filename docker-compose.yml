@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  app:
+    container_name: lafs-web
+    restart: always
+    build: .
+    ports:
+      - '4200:4200'
+    command: >
+      bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"
+networks:
+  default:
+    external:
+      name: lafs-net
