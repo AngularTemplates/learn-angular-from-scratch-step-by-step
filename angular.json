@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "learn-angular-from-scratch:build"
+            "buildTarget": "learn-angular-from-scratch-step-by-step:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "learn-angular-from-scratch:build:production"
+              "buildTarget": "learn-angular-from-scratch-step-by-step:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "learn-angular-from-scratch:build"
+            "buildTarget": "learn-angular-from-scratch-step-by-step:build"
           }
         },
         "test": {
